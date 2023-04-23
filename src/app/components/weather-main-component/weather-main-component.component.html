@@ -1,0 +1,18 @@
+
+<div class="parentBox">
+    <div class="main-container">
+        <div *ngIf="weatherData.isDay; else moon">
+            <fa-icon class="sun-class" [icon]="sunIcon"></fa-icon>
+        </div>
+        <ng-template #moon>
+            <fa-icon class="moon-class" [icon]="moonIcon"></fa-icon>
+        </ng-template>
+        <div class="weather-rows" style="font-size: 46px; margin-top:10px">{{weatherData.temp_celcius}}°</div>
+        <div class="weather-rows" style="font-size: 18px;">{{weatherData.temp_min}}° / {{weatherData.temp_max}}°</div>
+        <div class="weather-rows" style="font-size: 18px;">Feels like: {{weatherData.temp_feels_like}}°</div>
+        <div class="weather-rows" style="font-size: 36px; margin-top:10px">{{weatherData.city}}</div>
+        <div class="weather-rows" style="font-size: 18px;">Humidity: {{weatherData.humidity}}%</div>
+        
+    </div>
+</div>
+

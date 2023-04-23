@@ -1,0 +1,47 @@
+
+
+.main-container {
+    display: block;
+    width: 400px;
+    height: 420px;
+    color: white;
+    background: rgb(0,0,0);
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.weather-rows {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.sun-class {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    filter: drop-shadow(1px 1px 10px yellow);
+}
+
+.moon-class {
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    color: white;
+    filter: drop-shadow(1px 1px 10px white);
+}
+
+.parentBox {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background: whitesmoke;
+}
